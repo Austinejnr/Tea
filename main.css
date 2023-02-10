@@ -7,7 +7,7 @@
 body{
     background: var(--background);
 }
-
+/* header section starts here  */
 header{
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -16,7 +16,7 @@ header{
 header .container{
     width: 50%;
     padding-left: 60px;
-    padding-bottom: 150px;
+    padding-bottom: 300px;
 }
 header .left{
     display: flex;
@@ -40,7 +40,6 @@ header .right ul{
     margin-left: 100px;
     list-style: none;
     display: flex;
-    
 }
 header .right ul li{
     margin: 10px;
@@ -48,6 +47,13 @@ header .right ul li{
     opacity: 0.4;
     padding: 8px 15px;
     border-radius: 8px;
+}
+header .right ul li:hover{
+    background: var(--color);
+    opacity: none;
+    color: var(--white);
+    transition: all 0.4s ease;
+    cursor: pointer;
 }
 header .right .different{
     background: none;
@@ -70,12 +76,20 @@ header .right .different{
     padding-bottom: 50px;
 }
 
-.container button{
+.btn-brown{
     font-family: 'Plus Jakarta Sans', sans-serif;
     padding: 10px 27px;
     background: var(--header);
     color: var(--white);
     border-radius: 8px;
+}
+.btn-brown:hover{
+    background: var(--hovertext);
+    transition: all 0.9s ease-out;
+    color: var(--color);
+    font-weight: bolder;
+    padding: 10px 35px;
+    cursor: pointer;
 }
 .logo{
     border: 2px solid var(--white);
@@ -84,6 +98,9 @@ header .right .different{
     margin-left: 10px;
 }
 
+/* header section ends here  */
+
+/* first section starts here  */
 .firstsection{
    background: url("./Images/coffee\ patter\ 1.png");
    margin: 0 auto;
@@ -112,7 +129,7 @@ header .right .different{
     font-weight: lighter;
     padding-bottom: 30px;
 }
-.holder button{
+.btn-brown{
     font-family: 'Poppins', sans-serif;
     background: var(--header);
     color: var(--white);
@@ -124,13 +141,18 @@ header .right .different{
 }
 .holdertwo .frame{
     background: var(--white);
-    box-shadow: 5px 5px var(--frametwo);
+    box-shadow: 7px 7px var(--frametwo);
     overflow: hidden;
     padding: 0 15px 15px 15px;
     border-radius: 15px;
     margin-right: 50px;
     margin-top: 40px;
     text-align: center;
+}
+.holdertwo .frame:hover{
+    background: var(--hovertext);
+    transition: all 1s ease;
+    cursor: pointer;
 }
 .holdertwo .frame img{
     object-fit: contain;
@@ -156,7 +178,6 @@ header .right .different{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* margin-left: 30px; */
 }
 .holdertwo .frame .sign .icon{
     background: var(--header);
@@ -164,3 +185,369 @@ header .right .different{
     border-radius: 50%;
     padding: 5px;
 }
+/* first section ends here  */
+
+/* second section starts here */
+.secondsection{
+    padding-top: 40px;
+    padding-left: 80px;
+}
+.secondsection h3{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    color: var(--header);
+    text-align: center;
+}
+.secondsection .subnote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.secondsection .subnote .line{
+    width: 25px;
+    height: 3px;
+    background: var(--header);
+    margin-right: 10px;
+}
+.secondsection .subnote p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: var(--header);
+    letter-spacing: 0.3em;
+}
+.secondsection .mainstand{
+    display: flex;
+}
+.secondsection .partone{
+    width: 60%;
+}
+.secondsection h4{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text);
+    font-size: 60px;
+    padding-top: 50px;
+}
+.secondsection p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--header);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.secondsection .parttwo{
+    width: 40%;
+}
+.secondsection .parttwo img{
+    object-fit: cover;
+    font-size: 30px;
+}
+.large{
+    padding: 12px 40px;
+}
+.mainstand .parttwos{
+    width: 20%;
+}
+.mainstand .partones{
+    width: 80%;
+    padding-right: 50px;
+    text-align: right;
+}
+/* second section ends here */
+
+/* third secton starts here  */
+.thirdsection{
+    background: url("./Images/coffee\ patter\ 1.png");
+    position: relative;
+    width: 100%;
+    padding-bottom: 400px;
+}
+.thirdsection h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--header);
+    padding: 40px 0 30px 170px;
+    font-size: 50px;
+}
+.thirdsection .testimony{
+    width: 40%;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 28px rgba(17, 87, 192, 0.05);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    padding: 20px;
+}
+.test1{
+    position: absolute;
+    left: 45%;
+    top: 100px;
+}
+.test1:hover{
+    background: var(--hovertext);
+    opacity: 0.7;
+    transition: all 1s ease;
+}
+.testimony .commentator{
+    display: flex;
+    align-items: center;
+}
+.testimony .commentator nav{
+    padding-left: 13px;
+}
+.commentator h5{
+    font-family: 'Poppins', sans-serif;
+    color: var(--smalltext);
+    font-size: 15px;
+}
+.commentator h6{
+    font-family: 'Poppins', sans-serif;
+    color: var(--smalltext);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 12px;
+}   
+.commentator .quotes{
+    padding-left: 60%;
+}
+.testimony p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--smalltext);
+    font-size: 13px;
+    padding-top: 20px;
+}
+.test2{
+    position: absolute;
+    top: 175px;
+    left: 15%;
+}
+.test2:hover{
+    background: var(--hovertext);
+    opacity: 0.7;
+    transition: all 1s ease;
+}
+.test3{
+    position: absolute;
+    top: 310px;
+    left: 40%;
+}
+.test3:hover{
+    background: var(--hovertext);
+    opacity: 0.7;
+    transition: all 1s ease;
+}
+.img1{
+    width: 30%;
+    position: absolute;
+    top: 155px;
+    height: 250px;
+    background-image: url("./Images/coffee\ bean\ lot\ 1.png");
+    background-size: cover;
+    left: 70%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    /* opacity: 0.5; */
+    backdrop-filter: blur(20px);
+}
+.img2{
+    width: 30%;
+    position: absolute;
+    top: 270px;
+    height: 250px;
+    background-image: url("./Images/coffee\ bean\ lot\ 1.png");
+    background-size: cover;
+    left: 0;
+}
+/* third secton ends here  */
+
+/* blog section starts here  */
+.blogsection{
+    padding-top: 40px;
+}
+.blogsection h3{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--header);
+    text-align: center;
+}
+.blogsection .subnote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.blogsection .subnote .line{
+    width: 25px;
+    height: 3px;
+    background: var(--header);
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.blogsection .subnote p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    color: var(--header);
+    letter-spacing: 0.3em;
+    padding-top: 10px;
+}
+.blogsection .cards{
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 90%;
+    /* height: 250px; */
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 60px 0 60px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards .cardone{
+    width: 25%;
+    padding-left: 25px;
+    /* margin: 0 auto; */
+}
+.cardone img{
+    height: 150px;
+}
+.cardone img:hover{
+    height: 170px;
+    transition: all 2s ease;
+}
+.cardone h4{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--header);
+    padding-top: 15px;
+    font-size: 25px;
+}
+.cardone p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding-top: 15px;
+    color: var(--header);
+    font-size: 13px;
+    padding-bottom: 30px;
+}
+.btn-brown-long{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 10px 70px;
+    background: var(--header);
+    color: var(--white);
+    border-radius: 8px;
+}
+.btn-brown-long:hover{
+    background: var(--hovertext);
+    transition: all 0.9s ease-out;
+    color: var(--color);
+    font-weight: bolder;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.btn-white{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 10px 70px;
+    background: transparent;
+    color: var(--header);
+    border-radius: 8px;
+    border: 2px solid var(--header);
+}
+.btn-white:hover{
+    background: var(--hovertext);
+    transition: all 0.9s ease-out;
+    color: var(--color);
+    font-weight: bolder;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.logo-white{
+    border: 2px solid var(--header);
+    border-radius: 50%;
+    padding: 3px;
+    margin-left: 10px;
+}
+.cardone .space{
+    padding-top: 40px;
+}
+/* blog section ends here  */
+
+/* footer section starts here  */
+.footersection{
+    padding-top: 30px;
+    background: url("./Images/coffee\ patter\ 1.png");    
+}
+.footcontainer{
+    display: flex;
+    padding-bottom: 50px;
+}
+.foot1{
+    width: 50%;
+    padding-left: 150px;
+    padding-top: 100px;
+}
+.foot1 .texts{
+    display: flex;
+}
+.foot1 .text2{
+    padding-left: 80px;
+}
+.foot1 button{
+    margin-bottom: 40px;
+}
+.btn-brownlong{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 10px 50px;
+    background: var(--header);
+    color: var(--white);
+    border-radius: 8px;
+}
+.btn-brownlong:hover{
+    background: var(--hovertext);
+    transition: all 1s ease-out;
+    color: var(--color);
+    font-weight: bolder;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.texts span{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--header);
+    font-weight: bolder;
+}
+.texts ul li{
+    list-style: none;
+    color: var(--header);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 10px 0 0 0;
+}
+.foot2{
+    width: 50%;
+    text-align: right;
+    padding-right: 120px;
+    padding-top: 100px;
+}
+.foot2 h4{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--header);
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 40px;
+}
+.foot2 p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--header);
+    font-size: 15px;
+    padding-bottom: 30px;
+}
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 4px 28px rgba(17, 87, 192, 0.05);
+    backdrop-filter: blur(20px);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--header);
+}
+/* footer section ends here  */
